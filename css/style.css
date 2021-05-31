@@ -64,3 +64,65 @@ html {
 body {
   font-family: feather;
 }
+main.container-fluid{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(57, 11, 133, 0.87);
+}
+
+.hero_img{
+   background-image: url(../assets/images/hero/hero.png);
+   background-size:contain;
+   background-repeat: no-repeat;
+}
+.hero_icon{
+  width: 40px;
+  height: 40px;
+  background-color:rgba(238, 224, 31, 0.548);
+  border-radius:50%;
+}
+.section_card{
+  margin-top: 50px;
+  background: whitesmoke;
+}
+.slick-next:before, .slick-prev:before {
+  color: #000;
+}
+.card{
+  height: 300px;
+  width: 250px;
+  margin-left:20px;
+  margin-bottom:20px;
+}
+
+.card_footer_img{
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  margin-right: 15px;
+}
+
+.main_icon{
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%,-50%);
+  color: rgb(221, 200, 8);
+}
+
+
+
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+.link{
+ margin-left: 10px;
+ text-decoration: none;
+ color: #000;
+ cursor: pointer;
+}
+.link:hover{
+  color: green;
+}
