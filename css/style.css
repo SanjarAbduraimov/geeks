@@ -126,3 +126,7 @@ footer .container{
 .link:hover{
   color: green;
 }
+.slick-arrow{
+  background-color: black !important;
+  border-radius: 50%;
+}
