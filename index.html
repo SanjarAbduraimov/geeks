@@ -1,21 +1,843 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geeks Academy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geeks Academy</title>
-  <link rel="shortcut icon" href="assets/svg/logo-big.svg" type="image/x-icon">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="assets/svg/logo-big.svg"
+      type="image/x-icon"
+    />
 
-<body>
-  <header>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
-  </header>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light align-items-center px-3">
+        <a href="#" class="navbar-brand pt-0">
+          <img src="./assets/images/logo/logo.png" alt="logo" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav nav">
+            <li class="nav-item dropdown text-dark me-1">
+              <a
+                class="header__link nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                id="navbarBrowse"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Browse
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropend">
+                  <a
+                    class="dropdown-item text-capitalize"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    >web development</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >bootstrap</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >react</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >graphQI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >gatsby</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >grunt</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >svelte</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >meteor</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >HTML5</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >angular</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropend">
+                  <a
+                    class="dropdown-item text-capitalize dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >design</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >graphic design</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >illustrator</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >UX/UI design</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >figma design</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >adobe XD</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >sketch</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >icon design</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >photoshop</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >angular</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >mobile app</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >IT software</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >marketing</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#">music</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >life style</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#">business</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >photography</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown text-dark me-1">
+              <a
+                class="header__link nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                id=""
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Landings
+              </a>
+              <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="">
+                <li>
+                  <h4 class="dropdown-header text-uppercase">landings</h4>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#">courses</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >lead course</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown text-dark me-1">
+              <a
+                class="header__link nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="">
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >course single</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >course single v2</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >course resume</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >course category</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >course checkout</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >course list/grid</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-capitalize" href="#"
+                    >add new course</a
+                  >
+                </li>
+                <li class="dropend">
+                  <a
+                    class="dropdown-item text-capitalize dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >paths</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">browse path</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">path single</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <hr />
+                </li>
+                <li class="dropend">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    >Blog</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >listing</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >article</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >category</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-capitalize" href="#"
+                        >sidebar</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">About</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Help Center</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Error Page</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Pricing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown text-dark me-1">
+              <a
+                class="header__link nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Accounts
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="">
+                <li>
+                  <h4 class="dropdown-header text-uppercase">accounts</h4>
+                </li>
+                <li class="dropend">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    >Instructor</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="dropdown-header">
+                        <h4 class="text-uppercase">Instructor</h4>
+                        <p class="text-muted">
+                          Instructor dashboard for manage courses and earning.
+                        </p>
+                        <hr />
+                      </div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Dashboard</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Profile</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">My Courses</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Orders</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Reviews</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Students</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Payouts</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Earning</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropend">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    >Students</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="dropdown-header">
+                        <h4 class="text-uppercase">students</h4>
+                        <p class="text-muted">
+                          Students dashboard to manage your courses and
+                          subscriptions.
+                        </p>
+                        <hr />
+                      </div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Dashboard</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Subscriptions</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Payments</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Billing Info</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Invoice</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Invoice Details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Bookmarked</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">My Path</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropend">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Admin</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <div class="dropdown-header">
+                            <h4 class="text-uppercase">master admin</h4>
+                            <p class="text-muted">
+                              Master admin dashboard to manage courses, user,
+                              site setting, and work with amazing apps.
+                            </p>
+                            <hr />
+                          </div>
+                        </li>
+                        <li>
+                          <a
+                            class="
+                              header__btn
+                              btn
+                              text-light
+                              rounded
+                              text-capitalize
+                            "
+                            href="#"
+                            >go to dashboard</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <hr />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sign In</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sign Up</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Forgot Password</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Edit Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Security</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Social Profiles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Notifications</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Privacy Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Delete </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown text-dark me-1">
+              <a
+                class="header__link nav-link dropdown-item bg-transparent"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <i class="fas fa-file-alt text-primary fs-3"></i>
+                      <div class="ms-3">
+                        <h5>Documentations</h5>
+                        <p>Browse the all documentations</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <i class="fas fa-layer-group text-primary fs-3"></i>
+                      <div class="ms-3">
+                        <h5>
+                          Changelog
+                          <span class="text-primary">v1.0.1</span>
+                        </h5>
+                        <p>See what's new</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex align-items-center ms-lg-3" action="">
+            <span class="ms-3 header__form-item">
+              <i class="fas fa-search"></i>
+            </span>
+            <input
+              class="form-control py-2 px-5"
+              type="search"
+              placeholder="Search Courses"
+            />
+          </form>
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li>
+              <i
+                class="fas fa-bell btn btn-light rounded-circle me-2"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasone"
+              ></i>
+              <div
+                class="header__offcanvas offcanvas offcanvas-end rounded"
+                id="offcanvasone"
+                data-bs-scroll="true"
+                data-bs-keyboard="true"
+                data-bs-backdrop="false"
+              >
+                <div class="offcanvas-header">
+                  <span class="h5"> Notifications </span>
+                  <span class="ms-auto btn p-0">
+                    <i class="fas fa-cog"></i>
+                    <!-- <i
+                      class="far fa-window-close"
+                      data-bs-dismiss="offcanvas"
+                    ></i> -->
+                  </span>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="header__dropdown-img rounded-circle"
+                        src="./assets/images/avatar/teacher-1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="h5">Kristin Watson</div>
+                      <p>
+                        Kristin Watson like your comment on course Javascript
+                        Introduction!
+                      </p>
+                      <div class="fs-6 text-muted">
+                        <span class="text-success">
+                          <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span> 2 hours ago, 2:19PM </span>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <div class="btn btn-close"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="header__dropdown-img rounded-circle"
+                        src="./assets/images/avatar/teacher-3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="h5">Brooklyn Simmons</div>
+                      <p>Just launched a new Courses React for Beginner</p>
+                      <div class="fs-6 text-muted">
+                        <span class="text-success">
+                          <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span> 2 Oct 9, 1:20PM </span>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <div class="btn btn-close"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="header__dropdown-img rounded-circle"
+                        src="./assets/images/avatar/teacher-2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="h5">Jenny Wilson</div>
+                      <p>Just launched a new Courses React for Beginner</p>
+                      <div class="fs-6 text-muted">
+                        <span class="text-success">
+                          <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span> 2 Oct 9, 1:20PM </span>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <div class="btn btn-close"></div>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+                </div>
+                <hr class="mt-2" />
+                <div class="offcanvas-footer">
+                  <p class="text-muted ms-3">See all Notifications</p>
+                </div>
+              </div>
+              <!-- <div class="">
+                <div class="dropdown-header pt-1 px-3 pb-3">
+                  <span class="h5">Notifications</span>
+                  <span class="">
+                    <i class="fas fa-cog"></i>
+                  </span>
+                </div>
+                <div class="overflow-y-scroll">
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="header__dropdown-img rounded-circle"
+                        src="https://cdn.pixabay.com/photo/2015/03/26/09/39/woman-690034__340.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="h5">Kristin Watson</div>
+                      <p>
+                        Kristin Watson like your comment on course Javascript
+                        Introduction!
+                      </p>
+                      <div class="fs-6 text-muted">
+                        <span class="text-success">
+                          <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span> 2 hours ago, 2:19PM </span>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <div class="btn-close"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="header__dropdown-img rounded-circle"
+                        src="https://cdn.pixabay.com/photo/2015/03/26/09/39/woman-690034__340.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="h5">Brooklyn Simmons</div>
+                      <p>Just launched a new Courses React for Beginner</p>
+                      <div class="fs-6 text-muted">
+                        <span class="text-success">
+                          <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span> 2 Oct 9, 1:20PM </span>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <div class="btn-close"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="header__dropdown-img rounded-circle"
+                        src="https://cdn.pixabay.com/photo/2015/03/26/09/39/woman-690034__340.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="h5">Jenny Wilson</div>
+                      <p>Just launched a new Courses React for Beginner</p>
+                      <div class="fs-6 text-muted">
+                        <span class="text-success">
+                          <i class="far fa-thumbs-up"></i>
+                        </span>
+                        <span> 2 Oct 9, 1:20PM </span>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <div class="btn-close"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <a class="header__link text-muted" href="#"
+                    >See all Notifications</a
+                  >
+                </div>
+              </div> -->
+            </li>
+            <li>
+              <img
+                class="header__dropdown-img header__img btn p-0 rounded-circle"
+                src="./assets/svg/logo-big.svg"
+                alt=""
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvastwo"
+              />
+              <div
+                class="header__offcanvas offcanvas offcanvas-end rounded"
+                id="offcanvastwo"
+                data-bs-scroll="true"
+                data-bs-keyboard="true"
+                data-bs-backdrop="false"
+              >
+                <div class="offcanvas-header">
+                  <div class="col-2">
+                    <img
+                      class="header__offcanvas-img header__img rounded-circle"
+                      src="./assets/images/hero/hero.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="h5 mb-0">Annette Black</div>
+                    <div class="">
+                      <a
+                        class="text-muted text-decoration-none fs-5"
+                        href="mailto:annette@geeksui.com"
+                        >annette@geeksui.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-0" />
+                <div class="offcanvas-body">
+                  <div class="row">
+                    <div class="col">
+                      <div class="nav-item">
+                        <!-- <div class=""> -->
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                        >
+                          <span>
+                            <i class="far fa-circle"></i>
+                          </span>
+                          <span> Status </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Menu item</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Menu item</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Menu item</a>
+                          </li>
+                        </ul>
+                        <!-- </div> -->
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>
+                            <i class="far fa-user"></i>
+                          </span>
+                          <span> Profile </span>
+                        </a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>
+                            <i class="far fa-star"></i>
+                          </span>
+                          <span> Subscription </span>
+                        </a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>
+                            <i class="fas fa-cog"></i>
+                          </span>
+                          <span> Settings </span>
+                        </a>
+                      </div>
+                      <hr class="w-100" />
+                      <div class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>
+                            <i class="fas fa-power-off"></i>
+                          </span>
+                          <span> Sign Out </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offcanvas-footer"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   <section id="hero">
     <div class="container">
       <div class="row">
@@ -24,7 +846,11 @@
     </div>
   </section>
 
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
