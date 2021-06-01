@@ -60,7 +60,50 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+/* 
 body {
   font-family: feather;
+} */
+
+.header__link {
+  text-decoration: none;
+  color: black;
+}
+
+.header__dropdown-item {
+  color: blue;
+}
+
+.header__form-item {
+  position: absolute;
+}
+
+.header__dropdown-img, .header__offcanvas-img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: blue;
+}
+
+.header__offcanvas {
+  height: 450px;
+}
+
+.header__img {
+  position: relative;
+  display: inline-block;
+}
+.header__img::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: lime;
 }
